@@ -3,11 +3,11 @@ services:
   rtsp2icecast:
     build: .
     restart: always
+    container_name: rtsp2icecast
     volumes:
       - /etc/localtime:/etc/localtime:ro
     environment:
       RTSP_URL: rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream
-      FFMPEG_LOG_LEVEL: warning
       ICECAST_URL: 127.0.0.1
       ICECAST_PASSWORD: yourPassword
       ICECAST_MOUNTPOINT: yourMountPoint
