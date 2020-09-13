@@ -12,7 +12,6 @@ Below are the environmental variables available and their default value. Overrid
 | `ICECAST_URL`        | Yes      |
 | `ICECAST_PASSWORD`   | Yes      |
 | `ICECAST_MOUNTPOINT` | Yes      |
-| `FFMPEG_LOG_LEVEL`   |          |
 | `FFMPEG_INPUT_OPTS`  |          |
 | `FFMPEG_OUTPUT_OPTS` |          |
 
