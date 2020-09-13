@@ -4,20 +4,21 @@ A simple Docker container to stream audio from an RTSP stream to Icecast using F
 
 ### Environment Variables
 
-Below are the environmental variables available and their default value. Override them as needed.
+Below are the environmental variables available and their default value. Override them as needed. The FFmpeg options are already set to auto-detect the audio stream in realtime and transcode it to MP3 at 128 kbps using LAME. 
 
-| Variables            | Default                                                      |
-|----------------------|:------------------------------------------------------------:|
-| `RTSP_URL`           | rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream |
-| `FFMPEG_LOG_LEVEL`   | warning                                                      |
-| `FFMPEG_INPUT_OPTS`  | `empty`                                                      |
-| `FFMPEG_OUTPUT_OPTS` | `empty`                                                      |
-| `ICECAST_URL`        | 127.0.0.1                                                    |
-| `ICECAST_PASSWORD`   | `empty`                                                      |
-| `ICECAST_MOUNTPOINT` | rtsp2icecast                                                 |
+| Variables            | Required |
+|----------------------|:--------:|
+| `RTSP_URL`           | Yes      |
+| `ICECAST_URL`        | Yes      |
+| `ICECAST_PASSWORD`   | Yes      |
+| `ICECAST_MOUNTPOINT` | Yes      |
+| `FFMPEG_LOG_LEVEL`   |          |
+| `FFMPEG_INPUT_OPTS`  |          |
+| `FFMPEG_OUTPUT_OPTS` |          |
+
 
 #### Docker Compose
 
 - Clone the repo
-- Edit docker-compose.yaml for any customizations needed
+- Edit docker-compose.yaml
 - Launch the containers using `docker-compose up -d`

@@ -10,4 +10,4 @@ services:
       FFMPEG_LOG_LEVEL: warning
       ICECAST_URL: 127.0.0.1
       ICECAST_PASSWORD: yourPassword
-      ICECASE_MOUNTPOINT: yourMountPoint
+      ICECAST_MOUNTPOINT: yourMountPoint
