@@ -1,6 +1,8 @@
 # rtsp2icecast
 
-A simple Docker container to stream audio from an RTSP stream to Icecast using FFmpeg.
+A simple Docker container to stream audio from an RTSP stream to Icecast using FFmpeg. 
+
+Based on [rtsp2mjpg](https://github.com/eroji/rtsp2mjpg) by @eroji. 
 
 ### Environment Variables
 
