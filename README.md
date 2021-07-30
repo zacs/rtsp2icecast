@@ -1,6 +1,6 @@
 # rtsp2icecast
 
-A simple Docker container to stream audio from an RTSP stream to Icecast using FFmpeg. 
+A simple Docker container to stream audio from an RTSP stream (eg. from an IP camera) to Icecast using FFmpeg. 
 
 Based on [rtsp2mjpg](https://github.com/eroji/rtsp2mjpg) by @eroji. 
 
@@ -18,8 +18,8 @@ Below are the environmental variables available and their default value. Overrid
 | `FFMPEG_OUTPUT_OPTS` |          |
 
 
-#### Docker Compose
+### Docker Compose
 
-- Clone the repo
-- Edit docker-compose.yaml
-- Launch the containers using `docker-compose up -d`
+1. Clone the repo
+2. Edit docker-compose.yaml (particularly the required variables)
+3. Launch the containers using `docker-compose up -d`
