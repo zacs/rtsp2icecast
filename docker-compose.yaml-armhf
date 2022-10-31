@@ -9,5 +9,6 @@ services:
       RTSP_URL: rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream
       FFMPEG_LOG_LEVEL: warning
       ICECAST_URL: 127.0.0.1
+      ICECAST_PORT: 8000
       ICECAST_PASSWORD: yourPassword
       ICECAST_MOUNTPOINT: yourMountPoint
